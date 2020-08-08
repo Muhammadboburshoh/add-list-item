@@ -1,0 +1,86 @@
+/* html {
+
+} */
+
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  background-color: #555;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px
+}
+
+.practice {
+  margin-top: 50px;
+}
+
+.header-text {
+  color: #555;
+}
+
+#users {
+  list-style-type: none;
+  color: #555;
+}
+
+#users li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 2px;
+}
+
+#users li:nth-child(even) {
+  background-color: #abcded;
+}
+
+#addButton {
+  border: 1px solid #5f6469;
+  border-radius: 5px;
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 0 52px;
+}
+
+#addButton:hover {
+  background-color: #fff;
+  color: #ff7f50;
+  cursor: cell;
+}
+
+#username {
+  border: 1px solid #5f6469;
+  border-radius: 5px;
+}
+
+#users button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: none;
+  background-image: url(../imgs/deleteIcon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

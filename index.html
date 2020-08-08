@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1-dars</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="practice">
+    <div class="container">
+      <h1 class="header-text">Ismingizni kiriting</h1>
+      <input id="username" type="text" placeholder="Username..." autocomplete="off" spellcheck="false">
+
+      <button id="addButton"> A'zo Qo'shish</button>
+
+      <p>Kiritilgan isimlar</p>
+      <ul id="users"></ul>
+
+    </div>
+  </div>
+
+  <script>
+
+    function myFunction() {
+      if (username.value.length > 0) {
+        const newLi = document.createElement("LI")
+        newLi.textContent = username.value
+        users.appendChild(newLi)
+        username.value = ""
+
+        const deleteButton = document.createElement("BUTTON")
+        newLi.appendChild(deleteButton)
+
+        deleteButton.onclick = function () {
+          newLi.remove()
+        }
+      }
+    }
+    addButton.onclick = myFunction
+
+    username.onkeyup = function (event) {
+      if (event.keyCode === 13) {
+        if (username.value.length > 0) {
+
+          const newLi = document.createElement("LI")
+          newLi.textContent = username.value
+          users.appendChild(newLi)
+          username.value = ""
+
+          const deleteButton = document.createElement("BUTTON")
+          newLi.appendChild(deleteButton)
+
+          const buttonElement = document.createElement("SPAN")
+          deleteButton.appendChild(buttonElement)
+
+          deleteButton.onclick = function () {
+            newLi.remove()
+          }
+        }
+      }
+    }
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
