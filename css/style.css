@@ -13,8 +13,8 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Baloo Tamma 2", "Arial", sans-serif;
+  font-size: 20px;
   line-height: 1.5;
   color: #222;
   background-color: #555;
@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -36,6 +36,32 @@ body {
 
 .header-text {
   color: #555;
+}
+
+#username {
+  border: 1px solid #5f6469;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 5px;
+  padding: 5px 0;
+  box-shadow: 3px   5px 15px #000;
+}
+
+#addButton {
+  border: 1px solid #5f6469;
+  border-radius: 5px;
+  background-color: #ff7f50;
+  color: #fff;
+  width: 80%;
+  padding: 4px 0;
+  margin-top: 8px;
+  box-shadow: 3px   5px 15px #000;
+}
+
+#addButton:hover {
+  background-color: #fff;
+  color: #ff7f50;
+  cursor: cell;
 }
 
 #users {
@@ -53,25 +79,6 @@ body {
 
 #users li:nth-child(even) {
   background-color: #abcded;
-}
-
-#addButton {
-  border: 1px solid #5f6469;
-  border-radius: 5px;
-  background-color: #ff7f50;
-  color: #fff;
-  padding: 0 52px;
-}
-
-#addButton:hover {
-  background-color: #fff;
-  color: #ff7f50;
-  cursor: cell;
-}
-
-#username {
-  border: 1px solid #5f6469;
-  border-radius: 5px;
 }
 
 #users button {
