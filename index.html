@@ -24,52 +24,7 @@
     </div>
   </div>
 
-  <script>
-
-    function myFunction() {
-      if (username.value.length > 0) {
-        const newLi = document.createElement("LI")
-        newLi.textContent = username.value
-        users.appendChild(newLi)
-        username.value = ""
-
-        const deleteButton = document.createElement("BUTTON")
-        newLi.appendChild(deleteButton)
-
-        deleteButton.onclick = function () {
-          newLi.remove()
-        }
-      }
-    }
-    addButton.onclick = myFunction
-
-    username.onkeyup = function (event) {
-      if (event.keyCode === 13) {
-        if (username.value.length > 0) {
-
-          const newLi = document.createElement("LI")
-          newLi.textContent = username.value
-          users.appendChild(newLi)
-          username.value = ""
-
-          const deleteButton = document.createElement("BUTTON")
-          newLi.appendChild(deleteButton)
-
-          const buttonElement = document.createElement("SPAN")
-          deleteButton.appendChild(buttonElement)
-
-          deleteButton.onclick = function () {
-            newLi.remove()
-          }
-        }
-      }
-    }
-
-
-
-
-
-  </script>
+  <script src="JS/main.js"></script>
 
 </body>
 
